@@ -1,0 +1,41 @@
+{
+  "weight": 5,
+  "max_level": 3,
+  "slots": ["body"],
+
+  "supported_items": [
+    "minecraft:white_harness",
+    "minecraft:light_gray_harness",
+    "minecraft:gray_harness",
+    "minecraft:black_harness",
+    "minecraft:brown_harness",
+    "minecraft:red_harness",
+    "minecraft:orange_harness",
+    "minecraft:yellow_harness",
+    "minecraft:lime_harness",
+    "minecraft:green_harness",
+    "minecraft:cyan_harness",
+    "minecraft:light_blue_harness",
+    "minecraft:blue_harness",
+    "minecraft:purple_harness",
+    "minecraft:magenta_harness",
+    "minecraft:pink_harness"
+  ],
+
+  "anvil_cost": 5,
+
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+
+  "effects": {},
+
+  "description": {
+    "translate": "enchantment.speedghasts.flight_speed"
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "speedghasts",
+	"version": "${version}",
+	"name": "SpeedGhasts",
+	"description": "The mod adds Flight Speed enchantment books - an enchantment that increases the speed of Happy Ghasts.",
+	"authors": [
+		"TheTimStage"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/speedghasts/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.tts.SpeedGhasts"
+		]
+	},
+	"mixins": [
+		"speedghasts.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
