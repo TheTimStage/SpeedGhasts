@@ -1,5 +1,5 @@
 {
-  "weight": 5,
+  "weight": 100,
   "max_level": 3,
   "slots": ["body"],
 
@@ -36,6 +36,7 @@
   "effects": {},
 
   "description": {
-    "translate": "enchantment.speedghasts.flight_speed"
+    "translate": "enchantment.speedghasts.flight_speed",
+    "fallback": "Flight Speed"
   }
 }
