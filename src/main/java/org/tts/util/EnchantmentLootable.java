@@ -31,7 +31,7 @@ public class EnchantmentLootable {
             LootPool.Builder poolBuilder = LootPool.lootPool()
                     .setRolls(ConstantValue.exactly(1.0f))
                     .when(chance)
-                    .add(LootItem.lootTableItem(Items.ENCHANTED_BOOK).apply(myEnchantFunction));
+                    .add(LootItem.lootTableItem(Items.BOOK).apply(myEnchantFunction));
 
             tableBuilder.withPool(poolBuilder);
         });
