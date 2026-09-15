@@ -12,7 +12,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 import org.tts.SpeedGhasts;
 
 public class EnchantmentLootable {
@@ -29,7 +29,7 @@ public class EnchantmentLootable {
 
             LootItemCondition.Builder chance = LootItemRandomChanceCondition.randomChance(0.50f);
             LootPool.Builder poolBuilder = LootPool.lootPool()
-                    .setRolls(ConstantValue.exactly(1.0f))
+                    .setRolls(ContextIntProviders.exactly(1))
                     .when(chance)
                     .add(LootItem.lootTableItem(Items.BOOK).apply(myEnchantFunction));
 
